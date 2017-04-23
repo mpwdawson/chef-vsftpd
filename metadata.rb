@@ -1,4 +1,4 @@
-name              'vsftpd'
+name              'chef-vsftpd'
 maintainer        'Sebastian Grewe'
 maintainer_email  'sebastian.grewe@gmail.com'
 issues_url        'https://github.com/TheSerapher/chef-vsftpd/issues' if respond_to?(:issues_url)
