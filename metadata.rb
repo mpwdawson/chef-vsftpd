@@ -1,8 +1,8 @@
 name              'vsftpd'
 maintainer        'Sebastian Grewe'
 maintainer_email  'sebastian.grewe@gmail.com'
-issues_url        'https://github.com/TheSerapher/chef-vsftpd/issues'
-source_url        'https://github.com/TheSerapher/chef-vsftpd'
+issues_url        'https://github.com/TheSerapher/chef-vsftpd/issues' if respond_to?(:issues_url)
+source_url        'https://github.com/TheSerapher/chef-vsftpd' if respond_to?(:source_url)
 license           'Apache 2.0'
 description       'Installs/configures vsftpd'
 long_description  IO.read(File.join(File.dirname(__FILE__), 'README.md'))
@@ -15,6 +15,3 @@ supports 'centos'
 supports 'rhel'
 
 depends  'openssl',	'>= 4.2.0'
-
-source_url 'https://github.com/TheSerapher/chef-vsftpd' if respond_to?(:source_url)
-issues_url 'https://github.com/TheSerapher/chef-vsftpd/issues' if respond_to?(:issues_url)
